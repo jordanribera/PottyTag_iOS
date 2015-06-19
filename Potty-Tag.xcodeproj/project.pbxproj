@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79746BAF4D17CAC10A09CB12 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C3CFFA76D560A70EFECD2D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		840DB9821B3369C80018A40A /* PottyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB9811B3369C80018A40A /* PottyService.swift */; };
+		840DB9861B3398470018A40A /* StatusCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB9851B3398470018A40A /* StatusCollectionView.swift */; };
+		840DB9881B339D790018A40A /* StatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB9871B339D790018A40A /* StatusCollectionViewCell.swift */; };
+		84B1557A1B3354AC005E85C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B155791B3354AC005E85C2 /* SettingsViewController.swift */; };
+		84B1557C1B33565D005E85C2 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1557B1B33565D005E85C2 /* RadioButton.swift */; };
+		84B1557E1B3359BB005E85C2 /* radio_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B1557D1B3359BB005E85C2 /* radio_on.png */; };
 		84C603B31B3345AA001DC0BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C603B21B3345AA001DC0BF /* AppDelegate.swift */; };
 		84C603B51B3345AA001DC0BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C603B41B3345AA001DC0BF /* ViewController.swift */; };
 		84C603B81B3345AA001DC0BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C603B61B3345AA001DC0BF /* Main.storyboard */; };
@@ -26,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		470E5962D44EAE3E8912B65B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		840DB9811B3369C80018A40A /* PottyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PottyService.swift; sourceTree = "<group>"; };
+		840DB9851B3398470018A40A /* StatusCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCollectionView.swift; sourceTree = "<group>"; };
+		840DB9871B339D790018A40A /* StatusCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCollectionViewCell.swift; sourceTree = "<group>"; };
+		84B155791B3354AC005E85C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		84B1557B1B33565D005E85C2 /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		84B1557D1B3359BB005E85C2 /* radio_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radio_on.png; path = Images.xcassets/radio_on.imageset/radio_on.png; sourceTree = "<group>"; };
 		84C603AD1B3345AA001DC0BF /* Potty-Tag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potty-Tag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C603B11B3345AA001DC0BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C603B21B3345AA001DC0BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +50,8 @@
 		84C603C21B3345AA001DC0BF /* Potty-TagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Potty-TagTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C603C71B3345AA001DC0BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C603C81B3345AA001DC0BF /* Potty_TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potty_TagTests.swift; sourceTree = "<group>"; };
+		B1C3CFFA76D560A70EFECD2D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD54CA37257503E863CD57BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79746BAF4D17CAC10A09CB12 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50C526BF2C987FF1A6D13436 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD54CA37257503E863CD57BC /* Pods.debug.xcconfig */,
+				470E5962D44EAE3E8912B65B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		748CDD9B01B07C639857933B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C3CFFA76D560A70EFECD2D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84C603A41B3345AA001DC0BF = {
 			isa = PBXGroup;
 			children = (
 				84C603AF1B3345AA001DC0BF /* Potty-Tag */,
 				84C603C51B3345AA001DC0BF /* Potty-TagTests */,
 				84C603AE1B3345AA001DC0BF /* Products */,
+				50C526BF2C987FF1A6D13436 /* Pods */,
+				748CDD9B01B07C639857933B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +113,18 @@
 		84C603AF1B3345AA001DC0BF /* Potty-Tag */ = {
 			isa = PBXGroup;
 			children = (
+				84B1557D1B3359BB005E85C2 /* radio_on.png */,
 				84C603B21B3345AA001DC0BF /* AppDelegate.swift */,
 				84C603B41B3345AA001DC0BF /* ViewController.swift */,
 				84C603B61B3345AA001DC0BF /* Main.storyboard */,
 				84C603B91B3345AA001DC0BF /* Images.xcassets */,
 				84C603BB1B3345AA001DC0BF /* LaunchScreen.xib */,
 				84C603B01B3345AA001DC0BF /* Supporting Files */,
+				84B155791B3354AC005E85C2 /* SettingsViewController.swift */,
+				84B1557B1B33565D005E85C2 /* RadioButton.swift */,
+				840DB9811B3369C80018A40A /* PottyService.swift */,
+				840DB9851B3398470018A40A /* StatusCollectionView.swift */,
+				840DB9871B339D790018A40A /* StatusCollectionViewCell.swift */,
 			);
 			path = "Potty-Tag";
 			sourceTree = "<group>";
@@ -119,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C603CC1B3345AA001DC0BF /* Build configuration list for PBXNativeTarget "Potty-Tag" */;
 			buildPhases = (
+				B554F061FDA1F4B6827171A3 /* Check Pods Manifest.lock */,
 				84C603A91B3345AA001DC0BF /* Sources */,
 				84C603AA1B3345AA001DC0BF /* Frameworks */,
 				84C603AB1B3345AA001DC0BF /* Resources */,
+				ABA14D98A4686AB0CB6B2442 /* Embed Pods Frameworks */,
+				7F88AE0F9E847F902BB011C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +239,7 @@
 			files = (
 				84C603B81B3345AA001DC0BF /* Main.storyboard in Resources */,
 				84C603BD1B3345AA001DC0BF /* LaunchScreen.xib in Resources */,
+				84B1557E1B3359BB005E85C2 /* radio_on.png in Resources */,
 				84C603BA1B3345AA001DC0BF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +253,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F88AE0F9E847F902BB011C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA14D98A4686AB0CB6B2442 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B554F061FDA1F4B6827171A3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84C603A91B3345AA001DC0BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,6 +308,11 @@
 			files = (
 				84C603B51B3345AA001DC0BF /* ViewController.swift in Sources */,
 				84C603B31B3345AA001DC0BF /* AppDelegate.swift in Sources */,
+				840DB9821B3369C80018A40A /* PottyService.swift in Sources */,
+				84B1557A1B3354AC005E85C2 /* SettingsViewController.swift in Sources */,
+				840DB9861B3398470018A40A /* StatusCollectionView.swift in Sources */,
+				840DB9881B339D790018A40A /* StatusCollectionViewCell.swift in Sources */,
+				84B1557C1B33565D005E85C2 /* RadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +437,7 @@
 		};
 		84C603CD1B3345AA001DC0BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD54CA37257503E863CD57BC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Potty-Tag/Info.plist";
@@ -348,6 +448,7 @@
 		};
 		84C603CE1B3345AA001DC0BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470E5962D44EAE3E8912B65B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Potty-Tag/Info.plist";
@@ -409,6 +510,7 @@
 				84C603CE1B3345AA001DC0BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84C603CF1B3345AA001DC0BF /* Build configuration list for PBXNativeTarget "Potty-TagTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +519,7 @@
 				84C603D11B3345AA001DC0BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
