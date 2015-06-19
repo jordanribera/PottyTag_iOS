@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     let checkinTimeoutDuration = 120.0
     var defaults : NSUserDefaults!
     var checkin_id : Int?
@@ -17,6 +19,9 @@ class ViewController: UIViewController {
     var refreshTimer : NSTimer = NSTimer()
     var checkinTimeoutTimer : NSTimer = NSTimer()
     var dataSourceForCollection : Array<Gender> = []
+    var checkinSound = AVPlayer()
+    var checkoutSound = AVPlayer()
+    
     let pottyService : PottyService = PottyService()
     
     @IBOutlet weak var CheckinCheckOutButton: UIButton!
@@ -31,6 +36,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
 
+        checkinSound = self.setupAudioPlayerWithFile("water_drop", type:"wav")
+        checkoutSound = self.setupAudioPlayerWithFile("flush", type:"mp3")
+        
         defaults = NSUserDefaults.standardUserDefaults()
 
         if (defaults.objectForKey("isMale") == nil) {
@@ -92,7 +100,8 @@ class ViewController: UIViewController {
                         self.defaults.setInteger(response!.checkin_id!, forKey: "checkin_id")
                         self.checkin_id = response!.checkin_id!
                         self.is_checked_in = true
-                        
+                        self.checkinSound = self.setupAudioPlayerWithFile("water_drop", type:"wav")
+                        self.checkinSound.play()
                         //start checkin timeout timer!
                         self.checkinTimeoutTimer.invalidate()
                         self.checkinTimeoutTimer = NSTimer.scheduledTimerWithTimeInterval(self.checkinTimeoutDuration, target: self, selector: Selector("CheckinOverTimoutDuration"), userInfo: nil, repeats: false)
@@ -120,6 +129,9 @@ class ViewController: UIViewController {
                         self.defaults.removeObjectForKey("checkin_id")
                         self.checkin_id = nil
                         self.is_checked_in = false
+                        self.checkoutSound = self.setupAudioPlayerWithFile("flush", type:"mp3")
+
+                        self.checkoutSound.play()
                     }
                 }
                 self.checkinTimeoutTimer.invalidate()
@@ -199,6 +211,19 @@ class ViewController: UIViewController {
 
             
         }
+    }
+    
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVPlayer  {
+        var path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        var url = NSURL.fileURLWithPath(path!)
+        
+        var error: NSError?
+        
+        var audioPlayer:AVPlayer?
+        audioPlayer = AVPlayer(URL: url)
+
+        
+        return audioPlayer!
     }
     
     func CheckinOverTimoutDuration(){
